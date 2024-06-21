@@ -24,12 +24,14 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('CreatoXdoc/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
 
       - name: Install Dependencies
         run: mvn install -DskipTests
+        working-directory: CreatoXdoc
 
       - name: Run Tests
         run: mvn test
+        working-directory: CreatoXdoc
