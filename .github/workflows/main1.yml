@@ -35,3 +35,9 @@ jobs:
       - name: Run Tests
         run: mvn test
         working-directory: CreatoXdoc
+        
+      - name: Display Test Results
+        if: always()  # Always display the output, even if previous steps failed
+        run: |
+          echo "Maven build and test output:"
+          cat CreatoXdoc/target/surefire-reports/*.txt  # Adjust path based on your actual test output location
