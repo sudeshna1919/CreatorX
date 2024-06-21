@@ -30,6 +30,8 @@ jobs:
 
       - name: Install Dependencies
         run: mvn install -DskipTests
+        working-directory: path/to/your/project
 
       - name: Run Tests
         run: mvn test
+        working-directory: CreatoXdoc/pom.xml
