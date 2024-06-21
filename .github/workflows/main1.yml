@@ -40,4 +40,4 @@ jobs:
         if: always()  # Always display the output, even if previous steps failed
         run: |
           echo "Maven build and test output:"
-          cat CreatoXdoc/target/surefire-reports/*.txt  # Adjust path based on your actual test output location
+          ls -R CreatoXdoc/target  # List files in target directory for debugging
