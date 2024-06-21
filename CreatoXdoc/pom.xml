@@ -49,13 +49,6 @@
     <version>7.17.0</version>
     <scope>test</scope>
 </dependency>
-
-
-            <dependency>
-            	<groupId>CucumberSelenium</groupId>
-            	<artifactId>CucumberSelenium</artifactId>
-            	<version>0.0.1-SNAPSHOT</version>
-            </dependency>
 	  </dependencies>
   <name>CreatoXdoc</name>
 </project>
